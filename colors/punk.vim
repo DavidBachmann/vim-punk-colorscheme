@@ -75,17 +75,16 @@ let s:ash_blue   = '#acb4c2'
 let s:white_blue = '#d6deeb'
 
 " Core theme colors
-let s:yellow     = '#ffde63'
-let s:peach      = '#ffcb8b'
-let s:orange     = '#ff63a6'
-let s:red        = '#FF78B1' 
+let s:yellow     = '#FFDE63'
+let s:peach      = '#FFCB8B'
+let s:orange     = '#FF63A6'
+let s:red        = '#FB4934' 
 let s:watermelon = '#FF78B1'
-let s:violet     = '#fe89ff'
-let s:purple     = '#ae81ff'
-let s:indigo     = '#ae81ff'
+let s:violet     = '#FE89FF'
+let s:purple     = '#AE81FF'
 let s:blue       = '#2ADCFE'
 let s:turquoise  = '#BEF2FF'
-let s:emerald    = '#41a7fc'
+let s:emerald    = '#41A7FC'
 
 " Extra colors
 let s:cyan_blue  = '#296596'
@@ -145,7 +144,6 @@ exec 'highlight punkWatermelon guifg=' . s:watermelon
 exec 'highlight punkViolet guifg=' . s:violet
 exec 'highlight punkPurple guifg=' . s:purple
 exec 'highlight punkBlue guifg=' . s:blue
-exec 'highlight punkIndigo guifg=' . s:indigo
 exec 'highlight punkTurquoise guifg=' . s:turquoise
 exec 'highlight punkEmerald guifg=' . s:emerald
 exec 'highlight punkWhiteAlert guibg=bg guifg=' . s:white
@@ -223,7 +221,7 @@ highlight! link Special punkWatermelon
 exec 'highlight Statement guifg=' . s:violet . ' gui=none'
 
 " struct, union, enum, typedef
-highlight! link Structure punkIndigo
+highlight! link Structure punkPurple
 
 " Statusline, splits and tab lines
 exec 'highlight StatusLine cterm=none guibg=' . s:slate_blue . ' guifg=' . s:white . ' gui=none'
@@ -326,7 +324,7 @@ if has('nvim')
     highlight! link TSFuncMacro punkBlue
     highlight! link TSInclude punkWatermelon
     highlight! link TSKeywordOperator punkViolet
-    highlight! link TSNamespace punkIndigo
+    highlight! link TSNamespace punkPurple
     highlight! link TSParameter punkWhite
     highlight! link TSPunctSpecial punkWatermelon
     highlight! link TSSymbol punkPurple
@@ -353,8 +351,8 @@ highlight! link cppCustomClass punkTurquoise
 highlight! link cppExceptions punkEmerald
 highlight! link cppModifier punkViolet
 highlight! link cppOperator punkEmerald
-highlight! link cppSTLconstant punkIndigo
-highlight! link cppSTLnamespace punkIndigo
+highlight! link cppSTLconstant punkPurple
+highlight! link cppSTLnamespace punkPurple
 highlight! link cppStatement punkTurquoise
 highlight! link cppStructure punkViolet
 
@@ -549,7 +547,7 @@ highlight! link mkdURL punkPurple
 
 " PHP
 highlight! link phpClass punkEmerald
-highlight! link phpClasses punkIndigo
+highlight! link phpClasses punkPurple
 highlight! link phpFunction punkBlue
 highlight! link phpParent punkReset
 highlight! link phpType punkViolet
@@ -610,7 +608,7 @@ highlight! link rustKeyword punkViolet
 highlight! link rustLifetime punkViolet
 highlight! link rustMacro punkEmerald
 highlight! link rustMacroVariable punkViolet
-highlight! link rustModPath punkIndigo
+highlight! link rustModPath punkPurple
 highlight! link rustObsoleteExternMod punkWatermelon
 highlight! link rustObsoleteStorage punkWatermelon
 highlight! link rustReservedKeyword punkWatermelon
