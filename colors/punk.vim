@@ -127,7 +127,7 @@ endif
 
 " Custom punk highlight groups
 exec 'highlight punkReset guifg=fg'
-exec 'highlight punkVisual guibg=' . s:regal_blue
+exec 'highlight punkVisual guibg=' . s:cyan_blue
 exec 'highlight punkWhite guifg=' . s:white
 exec 'highlight punkSlateBlue guifg=' . s:slate_blue
 exec 'highlight punkRegalBlue guifg=' . s:regal_blue
@@ -778,7 +778,7 @@ highlight! link Cheat40Header punkBlue
 highlight! link yamlBlockMappingKey punkBlue
 highlight! link yamlFlowMappingKey punkBlue
 if g:punkUnderlineMatchParen
-    exec 'highlight MatchWord gui=underline guisp=' . s:orange
+    exec 'highlight MatchWord gui=underline guisp=' . s:orange	
 else
     highlight! link highlight punkOrange
 endif
@@ -792,15 +792,9 @@ exec 'highlight DiffDelete guibg=' . s:slate_blue . ' guifg=' . s:watermelon ' g
 exec 'highlight DiffText guibg=' . s:blue . ' guifg=' . s:black . ' gui=none'
 
 " ALE plugin
-if g:punkUndercurls
-    exec 'highlight ALEError guibg=NONE gui=undercurl guisp=' . s:red
-    exec 'highlight ALEWarning guibg=NONE gui=undercurl guisp=' . s:yellow
-    exec 'highlight ALEInfo guibg=NONE gui=undercurl guisp=' . s:blue
-else
-    exec 'highlight ALEError guibg=NONE'
-    exec 'highlight ALEWarning guibg=NONE'
-    exec 'highlight ALEInfo guibg=NONE'
-endif
+exec 'highlight ALEError guibg=NONE'
+exec 'highlight ALEWarning guibg=NONE'
+exec 'highlight ALEInfo guibg=NONE'
 highlight! link ALEVirtualTextError punkSteelBlue
 highlight! link ALEErrorSign punkRedAlert
 highlight! link ALEVirtualTextWarning punkSteelBlue
