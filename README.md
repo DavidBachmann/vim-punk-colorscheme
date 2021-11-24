@@ -40,4 +40,5 @@ Keyboard
 
 Want a keyboard that matches your colorscheme? I'm working on it.
 
-<img width="1000" alt="punk-keyboard" src="https://user-images.githubusercontent.com/8494120/139597618-8dde645e-edc3-4589-9671-154776fab59a.png">
+<img width="1000" alt="punk-keyboard-design" src="https://user-images.githubusercontent.com/8494120/139597618-8dde645e-edc3-4589-9671-154776fab59a.png">
+<img width="1000" alt="punk-keyboard-physical" src="https://user-images.githubusercontent.com/8494120/143251107-ff7e6858-04d7-48d4-9f46-653c5a2d4ec0.jpg">
